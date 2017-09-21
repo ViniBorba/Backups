@@ -5,7 +5,8 @@ public class Principal {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-/*Empresa*/		
+		
+/*Empresa*/
 		//Array das empresas
 		Empresa[] empresas = new Empresa[3];
 		
@@ -59,7 +60,13 @@ public class Principal {
 		google.setFuncionario(funcionarioUm);
 		google.setFuncionario(funcionarioDois);
 		
+		for(int aux = 0; aux < 10; aux ++){
+			
+		}
+		
 		System.out.println(google.mostraNomeDoFuncionario());
+		
+		
 		
 	}
 	
