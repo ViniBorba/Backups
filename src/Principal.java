@@ -35,11 +35,11 @@ public class Principal {
 		Funcionario funcionarioDois = new Funcionario("Dois");
 		Funcionario funcionarioTres = new Funcionario("Tres", "RH", 200.0);
 		Funcionario funcionarioQuatro = new Funcionario("Quatro", "TI", 50.0);
-		Funcionario funcionarioCinco = new Funcionario("Cinco");
+		Funcionario funcionarioCinco = new Funcionario("Cinco", "Fora",100.0);
 		Funcionario funcionarioSeis = new Funcionario("Seis", "TI", 100.0);
 		Funcionario funcionarioSete = new Funcionario("Sete", "TI", 100.0);
 		Funcionario funcionarioOito = new Funcionario("Oito", "TI", 100.0);
-		Funcionario funcionarioNove = new Funcionario("Nove", "TI", 100.0);
+		Funcionario funcionarioNove = new Funcionario("Nove");
 		Funcionario funcionarioDez = new Funcionario("Dez", "TI", 100.0);
 		
 		
@@ -52,19 +52,29 @@ public class Principal {
 		arrayDeFuncionario[5] = funcionarioSeis;
 		arrayDeFuncionario[6] = funcionarioSete;
 		arrayDeFuncionario[7] = funcionarioOito;
-		arrayDeFuncionario[5] = funcionarioNove;
+		arrayDeFuncionario[8] = funcionarioNove;
 		arrayDeFuncionario[9] = funcionarioDez;
 		
 		
+		funcionarioUm.setpegaEmpresaondeTrabalha(google);
+		funcionarioDois.setpegaEmpresaondeTrabalha(facebook);
+		funcionarioTres.setpegaEmpresaondeTrabalha(microsoft);
+		funcionarioQuatro.setpegaEmpresaondeTrabalha(google);
+		funcionarioCinco.setpegaEmpresaondeTrabalha(google);
+		funcionarioSeis.setpegaEmpresaondeTrabalha(google);
+		funcionarioSete.setpegaEmpresaondeTrabalha(google);
+		funcionarioOito.setpegaEmpresaondeTrabalha(google);
+		funcionarioNove.setpegaEmpresaondeTrabalha(google);
+		funcionarioDez.setpegaEmpresaondeTrabalha(google);
 		
-		google.setFuncionario(funcionarioUm);
-		google.setFuncionario(funcionarioDois);
 		
 		for(int aux = 0; aux < 10; aux ++){
 			
+			System.out.println(arrayDeFuncionario[aux].getNome()+" " +arrayDeFuncionario[aux].getNomeDaEmpresa());
+			
 		}
 		
-		System.out.println(google.mostraNomeDoFuncionario());
+		
 		
 		
 		

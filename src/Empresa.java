@@ -3,7 +3,7 @@ public class Empresa {
 	
 	private String nomeDaEmpresa;
 	//private String cnpj;
-	private Funcionario trabalhadorDaEmpresa;
+	private static Funcionario trabalhadorDaEmpresa;
 	
 	
 	

@@ -87,5 +87,12 @@ public class Funcionario {
 		}
 	}
 	
+	public void setpegaEmpresaondeTrabalha(Empresa empresa){
+		this.empresaOndeTrabalha = empresa;
+	}
+	public String getNomeDaEmpresa(){
+		return this.empresaOndeTrabalha.getNome();
+	}
+	
 
 }
