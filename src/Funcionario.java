@@ -93,6 +93,7 @@ public class Funcionario {
 	public String getNomeDaEmpresa(){
 		return this.empresaOndeTrabalha.getNome();
 	}
+
 	
 
 }

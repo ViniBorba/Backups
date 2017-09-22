@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 public class Principal {
 
@@ -5,6 +7,10 @@ public class Principal {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		String testa;
+		
+		Scanner nai = new Scanner(System.in);
 		
 /*Empresa*/
 		//Array das empresas
@@ -56,19 +62,26 @@ public class Principal {
 		arrayDeFuncionario[9] = funcionarioDez;
 		
 		
-		funcionarioUm.setpegaEmpresaondeTrabalha(google);
+		funcionarioUm.setpegaEmpresaondeTrabalha(microsoft);
 		funcionarioDois.setpegaEmpresaondeTrabalha(facebook);
-		funcionarioTres.setpegaEmpresaondeTrabalha(microsoft);
-		funcionarioQuatro.setpegaEmpresaondeTrabalha(google);
-		funcionarioCinco.setpegaEmpresaondeTrabalha(google);
+		funcionarioTres.setpegaEmpresaondeTrabalha(google);
+		funcionarioQuatro.setpegaEmpresaondeTrabalha(microsoft);
+		funcionarioCinco.setpegaEmpresaondeTrabalha(facebook);
 		funcionarioSeis.setpegaEmpresaondeTrabalha(google);
 		funcionarioSete.setpegaEmpresaondeTrabalha(google);
-		funcionarioOito.setpegaEmpresaondeTrabalha(google);
-		funcionarioNove.setpegaEmpresaondeTrabalha(google);
+		funcionarioOito.setpegaEmpresaondeTrabalha(microsoft);
+		funcionarioNove.setpegaEmpresaondeTrabalha(facebook);
 		funcionarioDez.setpegaEmpresaondeTrabalha(google);
 		
+
+		System.out.println("Coloca numro: ");
+		testa = nai.next();
 		
-		for(int aux = 0; aux < 10; aux ++){
+		System.out.println(testa);
+		
+		
+		//percore o array com o length, sem precisar informar o tamanho do array
+		for(int aux = 0; aux < arrayDeFuncionario.length; aux ++){
 			
 			System.out.println(arrayDeFuncionario[aux].getNome()+" " +arrayDeFuncionario[aux].getNomeDaEmpresa());
 			
@@ -76,6 +89,7 @@ public class Principal {
 		
 		
 		
+		System.out.println(testa);
 		
 		
 	}
